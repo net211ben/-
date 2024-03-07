@@ -1,0 +1,80 @@
+一、与硬件相关（p21）
+
+1.封装（Package）
+
+常用的封装形式可分为通孔封装和贴片封装（类似给集成电路封盖？作用为保护芯片，并且使其能与外部世界连接）；
+
+通孔封装主要有单列直插（Single-in-line Package，SIP）、双列直插（Dual-in-line Package,DIP)
+
+、Z字形直插式封装(Zigzag-in-line Package，ZIP)等。
+
+贴片封装有小外形封装（Small Outline Package,SOP）、插针网格阵列封装(Ceratmic Pin Grid Array Package，PGA）
+
+2，印制电路板(Printed Circuit Board，PCB)
+
+组装电子元器件的基板，印制板；
+
+3·动态可读写随机存储器与静态可读写随机存储器
+
+动态可读写随机存储器（Dynamic Random Access Memory,DRAM)、
+
+静态可读写随机存储器(Static Random Access Metnory,SRAM)
+
+4，只读存储器(Read Only Memory,ROM)
+
+5.闪速存储器（闪存）
+
+6.模拟量和开关量
+
+模拟量是指时间连续，数值也连续的物理量（模电）
+
+开关量是指一种二值信号，（高电平和低电平）表示2个逻辑值（1，0）
+
+二、与通信相关
+
+1.并行通信
+
+2.串行通信
+
+3.串行外设接口（Serial Periheral Interface,SPI）
+
+4.集成电路互联总线(I2C)
+
+5.通用串行总线（Universal Serial Bus ,USB）
+
+6.控制器局域网
+
+7.边界扫描测试协议（JointTest Action Group,JTAG）
+
+8.串行线调试技术（Serial Wire Debug，SWD）
+
+三、与功能模块相关的术语
+
+1.通用输入输出
+
+通用输人输出(General Purpose I/O,GPIO)
+
+2·模数转换(Analogto Digital Convert，ADC)的功能是将电压信号（模拟量）转为数字量；
+
+数模转换(Digitalto Analog Convert，DAC)的功能则是将数字量转换为电压信号（模拟量）
+
+3.脉冲宽度调制器（Pulse Width Modulator,PWM)
+
+4.看门狗(Watch Dog）
+
+为了防止程序跑飞而设计的一种自动定时器。当程序跑飞时，由于无法正常执行清除看门狗定时器，看门狗定时器会自动溢出，使系统程序复位。
+
+5·液晶显示
+
+液晶显示(Liquid Crystal Display，LCD）
+
+是电子信息产品的一种显示器件，可分为字段型、点阵字符型、点阵图形型三类。
+
+6.发光二极管(Light Emitting Diode，LED）
+
+7.键盘（伟大，无需多言）
+————————————————
+
+                            版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+                        
+原文链接：https://blog.csdn.net/qijinqichu/article/details/136414338
