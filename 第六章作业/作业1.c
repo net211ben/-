@@ -113,3 +113,37 @@ g_pfnVectors:
  NVIC->ISER[1] = 0x400000
 
  ### 5
+UART_User_Handler中断处理函数
+void UART_User_Handler(void)
+{
+	//【1】声明局部变量
+	uint8_t ch;
+	uint8_t flag;
+    //【2】关总中断
+	DISABLE_INTERRUPTS; 
+	//【3】读取接到的一个字节
+	ch=uart_re1(UART_User,&flag);  //调用接收一个字节的函数，清接收中断位
+	//【4】根据flag判断是否真正收到一个字节的数据
+	if(flag)                        //有数据
+	{
+		ch=ch+2;
+		uart_send1(UART_User,ch);  //回发接收到的字节
+	}
+	//【5】开总中断
+	ENABLE_INTERRUPTS;   
+	
+ }
+ 
+未交换前运行结果
+![image](https://github.com/net211ben/-/assets/93826955/237aaebd-1783-48e6-8620-b1e37f347592)
+
+交换UART_2和TIM6在中断向量表的位置和IRQ号
+![image](https://github.com/net211ben/-/assets/93826955/1b5417dd-828f-4e6f-8338-907e587c978f)
+
+交换后运行结果
+![image](https://github.com/net211ben/-/assets/93826955/79fcd8dc-af8c-4dd5-a0a4-21eae5448e39)
+
+
+
+
+
